@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		AD51A0ED295CAC2000D82CE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD51A0EC295CAC2000D82CE3 /* AppDelegate.swift */; };
 		AD51A0EF295CAC2000D82CE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD51A0EE295CAC2000D82CE3 /* SceneDelegate.swift */; };
-		AD51A0F1295CAC2000D82CE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD51A0F0295CAC2000D82CE3 /* ViewController.swift */; };
-		AD51A0F4295CAC2000D82CE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD51A0F2295CAC2000D82CE3 /* Main.storyboard */; };
 		AD51A0F6295CAC2100D82CE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD51A0F5295CAC2100D82CE3 /* Assets.xcassets */; };
 		AD51A0F9295CAC2100D82CE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD51A0F7295CAC2100D82CE3 /* LaunchScreen.storyboard */; };
 		AD51A104295CAC2100D82CE3 /* GBShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD51A103295CAC2100D82CE3 /* GBShopTests.swift */; };
@@ -39,8 +37,6 @@
 		AD51A0E9295CAC2000D82CE3 /* GBShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD51A0EC295CAC2000D82CE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD51A0EE295CAC2000D82CE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AD51A0F0295CAC2000D82CE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AD51A0F3295CAC2000D82CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD51A0F5295CAC2100D82CE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD51A0F8295CAC2100D82CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD51A0FA295CAC2100D82CE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,13 +95,10 @@
 		AD51A0EB295CAC2000D82CE3 /* GBShop */ = {
 			isa = PBXGroup;
 			children = (
-				AD51A0EC295CAC2000D82CE3 /* AppDelegate.swift */,
-				AD51A0EE295CAC2000D82CE3 /* SceneDelegate.swift */,
-				AD51A0F0295CAC2000D82CE3 /* ViewController.swift */,
-				AD51A0F2295CAC2000D82CE3 /* Main.storyboard */,
-				AD51A0F5295CAC2100D82CE3 /* Assets.xcassets */,
-				AD51A0F7295CAC2100D82CE3 /* LaunchScreen.storyboard */,
-				AD51A0FA295CAC2100D82CE3 /* Info.plist */,
+				AD51A11F295CAE8500D82CE3 /* App */,
+				AD51A11E295CAE7F00D82CE3 /* Core */,
+				AD51A11D295CAE7800D82CE3 /* Resources */,
+				AD51A11C295CAE6F00D82CE3 /* Environments */,
 			);
 			path = GBShop;
 			sourceTree = "<group>";
@@ -125,6 +118,71 @@
 				AD51A10F295CAC2100D82CE3 /* GBShopUITestsLaunchTests.swift */,
 			);
 			path = GBShopUITests;
+			sourceTree = "<group>";
+		};
+		AD51A11C295CAE6F00D82CE3 /* Environments */ = {
+			isa = PBXGroup;
+			children = (
+				AD51A0FA295CAC2100D82CE3 /* Info.plist */,
+			);
+			path = Environments;
+			sourceTree = "<group>";
+		};
+		AD51A11D295CAE7800D82CE3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AD51A0F7295CAC2100D82CE3 /* LaunchScreen.storyboard */,
+				AD51A0F5295CAC2100D82CE3 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AD51A11E295CAE7F00D82CE3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		AD51A11F295CAE8500D82CE3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AD51A0EE295CAC2000D82CE3 /* SceneDelegate.swift */,
+				AD51A0EC295CAC2000D82CE3 /* AppDelegate.swift */,
+				AD51A123295CAE9D00D82CE3 /* BusinessLogic */,
+				AD51A122295CAE9700D82CE3 /* Entity */,
+				AD51A121295CAE9100D82CE3 /* Assembly */,
+				AD51A120295CAE8B00D82CE3 /* Flows */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AD51A120295CAE8B00D82CE3 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		AD51A121295CAE9100D82CE3 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		AD51A122295CAE9700D82CE3 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		AD51A123295CAE9D00D82CE3 /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BusinessLogic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +291,6 @@
 			files = (
 				AD51A0F9295CAC2100D82CE3 /* LaunchScreen.storyboard in Resources */,
 				AD51A0F6295CAC2100D82CE3 /* Assets.xcassets in Resources */,
-				AD51A0F4295CAC2000D82CE3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +315,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD51A0F1295CAC2000D82CE3 /* ViewController.swift in Sources */,
 				AD51A0ED295CAC2000D82CE3 /* AppDelegate.swift in Sources */,
 				AD51A0EF295CAC2000D82CE3 /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +353,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AD51A0F2295CAC2000D82CE3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AD51A0F3295CAC2000D82CE3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AD51A0F7295CAC2100D82CE3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
