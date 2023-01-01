@@ -145,6 +145,7 @@
 		AD51A0EB295CAC2000D82CE3 /* GBShop */ = {
 			isa = PBXGroup;
 			children = (
+				AD51A123295CAE9D00D82CE3 /* BusinessLogic */,
 				AD51A11F295CAE8500D82CE3 /* App */,
 				AD51A11E295CAE7F00D82CE3 /* Core */,
 				AD51A11D295CAE7800D82CE3 /* Resources */,
@@ -201,8 +202,6 @@
 			children = (
 				AD51A0EE295CAC2000D82CE3 /* SceneDelegate.swift */,
 				AD51A0EC295CAC2000D82CE3 /* AppDelegate.swift */,
-				AD51A123295CAE9D00D82CE3 /* BusinessLogic */,
-				AD51A122295CAE9700D82CE3 /* Entity */,
 				AD51A121295CAE9100D82CE3 /* Assembly */,
 				AD51A120295CAE8B00D82CE3 /* Flows */,
 			);
@@ -235,6 +234,7 @@
 		AD51A123295CAE9D00D82CE3 /* BusinessLogic */ = {
 			isa = PBXGroup;
 			children = (
+				AD51A122295CAE9700D82CE3 /* Entity */,
 				AD51A131295CB9B100D82CE3 /* Network */,
 			);
 			path = BusinessLogic;
