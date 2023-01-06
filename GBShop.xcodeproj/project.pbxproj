@@ -26,6 +26,12 @@
 		AD51A135295CBA3600D82CE3 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD51A134295CBA3600D82CE3 /* Auth.swift */; };
 		AD51A137295CBAF100D82CE3 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD51A136295CBAF100D82CE3 /* RequestFactory.swift */; };
 		AD51A139295CC01900D82CE3 /* ResponseCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD51A138295CC01900D82CE3 /* ResponseCodableTests.swift */; };
+		ADB881FA29681B2C00BD9348 /* AddingCommentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB881F929681B2C00BD9348 /* AddingCommentEntity.swift */; };
+		ADB881FC29681C4B00BD9348 /* DeleteCommentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB881FB29681C4B00BD9348 /* DeleteCommentEntity.swift */; };
+		ADB881FE29681CEF00BD9348 /* AddingComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB881FD29681CEF00BD9348 /* AddingComment.swift */; };
+		ADB8820029681D9400BD9348 /* AddingCommentRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB881FF29681D9400BD9348 /* AddingCommentRequestFactory.swift */; };
+		ADB8820229681FE000BD9348 /* DeleteCommentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB8820129681FE000BD9348 /* DeleteCommentRequest.swift */; };
+		ADB882042968202000BD9348 /* DeleteComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB882032968202000BD9348 /* DeleteComment.swift */; };
 		F72AE6FCF6723D9406C8F0C9 /* Pods_GBShop_GBShopUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB75E015F88265A5CAEA0CC0 /* Pods_GBShop_GBShopUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +79,12 @@
 		AD51A134295CBA3600D82CE3 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		AD51A136295CBAF100D82CE3 /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
 		AD51A138295CC01900D82CE3 /* ResponseCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCodableTests.swift; sourceTree = "<group>"; };
+		ADB881F929681B2C00BD9348 /* AddingCommentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingCommentEntity.swift; sourceTree = "<group>"; };
+		ADB881FB29681C4B00BD9348 /* DeleteCommentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteCommentEntity.swift; sourceTree = "<group>"; };
+		ADB881FD29681CEF00BD9348 /* AddingComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingComment.swift; sourceTree = "<group>"; };
+		ADB881FF29681D9400BD9348 /* AddingCommentRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingCommentRequestFactory.swift; sourceTree = "<group>"; };
+		ADB8820129681FE000BD9348 /* DeleteCommentRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteCommentRequest.swift; sourceTree = "<group>"; };
+		ADB882032968202000BD9348 /* DeleteComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteComment.swift; sourceTree = "<group>"; };
 		AE5931805DDF0824E30EC993 /* Pods-GBShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShop.debug.xcconfig"; path = "Target Support Files/Pods-GBShop/Pods-GBShop.debug.xcconfig"; sourceTree = "<group>"; };
 		CB75E015F88265A5CAEA0CC0 /* Pods_GBShop_GBShopUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBShop_GBShopUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E22ACC6CEE905AF5ED267EFE /* Pods-GBShop-GBShopUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShop-GBShopUITests.debug.xcconfig"; path = "Target Support Files/Pods-GBShop-GBShopUITests/Pods-GBShop-GBShopUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -227,6 +239,8 @@
 			children = (
 				AD51A12D295CB96900D82CE3 /* LoginResult.swift */,
 				AD51A12F295CB97800D82CE3 /* User.swift */,
+				ADB881F929681B2C00BD9348 /* AddingCommentEntity.swift */,
+				ADB881FB29681C4B00BD9348 /* DeleteCommentEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -257,6 +271,10 @@
 				AD51A132295CB9C400D82CE3 /* AuthRequestFactory.swift */,
 				AD51A134295CBA3600D82CE3 /* Auth.swift */,
 				AD51A136295CBAF100D82CE3 /* RequestFactory.swift */,
+				ADB881FD29681CEF00BD9348 /* AddingComment.swift */,
+				ADB881FF29681D9400BD9348 /* AddingCommentRequestFactory.swift */,
+				ADB8820129681FE000BD9348 /* DeleteCommentRequest.swift */,
+				ADB882032968202000BD9348 /* DeleteComment.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -509,15 +527,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADB881FE29681CEF00BD9348 /* AddingComment.swift in Sources */,
 				AD51A137295CBAF100D82CE3 /* RequestFactory.swift in Sources */,
+				ADB8820029681D9400BD9348 /* AddingCommentRequestFactory.swift in Sources */,
+				ADB882042968202000BD9348 /* DeleteComment.swift in Sources */,
 				AD51A12A295CB7A700D82CE3 /* AbstractRequestFactory.swift in Sources */,
+				ADB8820229681FE000BD9348 /* DeleteCommentRequest.swift in Sources */,
 				AD51A12E295CB96900D82CE3 /* LoginResult.swift in Sources */,
+				ADB881FA29681B2C00BD9348 /* AddingCommentEntity.swift in Sources */,
 				AD51A126295CB20500D82CE3 /* AbstractErrorParser.swift in Sources */,
 				AD51A12C295CB87500D82CE3 /* RequestRouter.swift in Sources */,
 				AD51A130295CB97800D82CE3 /* User.swift in Sources */,
 				AD51A135295CBA3600D82CE3 /* Auth.swift in Sources */,
 				AD51A133295CB9C400D82CE3 /* AuthRequestFactory.swift in Sources */,
 				AD51A0ED295CAC2000D82CE3 /* AppDelegate.swift in Sources */,
+				ADB881FC29681C4B00BD9348 /* DeleteCommentEntity.swift in Sources */,
 				AD51A0EF295CAC2000D82CE3 /* SceneDelegate.swift in Sources */,
 				AD51A128295CB2AF00D82CE3 /* DataRequest.swift in Sources */,
 			);
